@@ -51,7 +51,7 @@ if __name__ == "__main__":
     loss.backward()
     opt_adam.step()
 
-    for epoch in range(30):
+    for epoch in range(60):
         opt_adam.zero_grad()
         outputs=model(X_train)
         loss=cel_loss(outputs,y_train)
@@ -68,3 +68,4 @@ if __name__ == "__main__":
     print(f"Val Accuracy: {accuracy:.4f}")
 
 print(confusion_matrix(y_val.numpy(), predicted.numpy()))
+torch.save(model.state_dict(), 'scuba_model.pth')
