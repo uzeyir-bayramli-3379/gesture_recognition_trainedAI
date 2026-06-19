@@ -1,6 +1,6 @@
 # Gesture Recognition (trainedAI)
 
-A temporal hand-gesture recognizer built from scratch — the sequel to [hand_pose_detector_trainedAI](https://github.com/uzeyir-bayramli-3379).
+A temporal hand-gesture recognizer built from scratch — the sequel to [hand_pose_detector_trainedAI](https://github.com/uzeyir-bayramli-3379/hand_pose_detector_trainedAI).
 
 Where the pose detector classified a **single frame** of hand landmarks (a static pose), this project classifies **motion over time** — a short sequence of frames — using a 1D convolutional network over the time axis. The distinction matters: a wave and a raised, still hand look identical in any single frame; only the movement across frames tells them apart.
 
